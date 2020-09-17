@@ -1,0 +1,19 @@
+.comment__box {
+    width: 50%;
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #F0F2F5;
+    border-radius: 20px;
+}
+
+.comment__user {
+    display: flex;
+    align-items: center;
+}
+
+.comment__user img {
+    margin-right: 5px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}

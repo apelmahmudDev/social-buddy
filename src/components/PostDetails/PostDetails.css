@@ -1,0 +1,19 @@
+.post__details{
+    border-radius: 10px;
+    box-shadow: 0 2px 5px #ddd;
+}
+
+.post__details__post {
+    margin: 10px 0;
+    padding: 3%;
+}
+
+.post__details__button {
+    border-top: 1px solid #d3d3d3;
+}
+
+.post__details__button Button{
+    height: 30px;
+    margin-top: 5px;
+    text-transform: capitalize;
+}
