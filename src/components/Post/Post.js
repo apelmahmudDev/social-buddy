@@ -14,16 +14,20 @@ const Post = (props) => {
 	useEffect(() => {
 		const allPostUser = postUser;
 		setUsers(allPostUser);
-	},[])
+	}, []);
 
-	const aPostUser = users.find(user => user.id === id);
+	const aPostUser = users.find((user) => user.id === id);
 
 	return (
 		<div className="post__container">
 			<Box className="post">
 				<Typography component="div" className="post__typography">
 					<Box display="flex" alignItems="center" mb={2}>
-						<img className="post__user__image" src={aPostUser && aPostUser.img} alt=""/>
+						<img
+							className="post__user__image"
+							src={aPostUser && aPostUser.img}
+							alt=""
+						/>
 						<Box ml={1}>
 							<Typography className="post__user" variant="h6">
 								{aPostUser && aPostUser.name}
@@ -43,7 +47,9 @@ const Post = (props) => {
 						<Box ml={4}>
 							{/* Sent daynamic id from here */}
 							<Link className="post__link" to={`/postDetails/${id}`}>
-								<Button className="main__button" mt={3}>See more</Button>
+								<Button className="main__button" mt={3}>
+									See more
+								</Button>
 							</Link>
 						</Box>
 					</Box>

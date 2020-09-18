@@ -1,5 +1,13 @@
-import { Box, Container, Grid, List, makeStyles, Typography,  ListItem, ListItemText } from '@material-ui/core';
 import React from 'react';
+import { 
+    Box, 
+    Container, 
+    Grid, List, 
+    makeStyles, 
+    Typography,  
+    ListItem, 
+    ListItemText
+} from '@material-ui/core';
 import './Footer.css';
 import logo from '../../images/buddy.png';
 import FacebookIcon from '@material-ui/icons/Facebook';
@@ -25,11 +33,8 @@ function ListItemLink(props) {
     return <ListItem component="a" {...props} />;
 }
   
-
 const Footer = () => {
-
     const classes = useStyles();
-
 	return (
 		<div className="footer">
 			<Container>

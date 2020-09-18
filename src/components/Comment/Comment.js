@@ -6,7 +6,6 @@ import './Comment.css';
 const Comment = (props) => {
     const { email, body, id } = props.comment;
     const userImage = userImages.find(image => image.id === id);
-    // console.log(userImage);
     return (
         <Grid container md={6} className="comment__box">
             <div className="comment__user">

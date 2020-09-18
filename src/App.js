@@ -12,6 +12,7 @@ import Footer from './components/Footer/Footer';
 import FooterSecond from './components/FooterSecond/FooterSecond';
 import NotFound from './components/NotFound/NotFound';
 import Banner from './components/Banner/Banner';
+import ScrollTop from './components/ScrollTop/ScrollTop';
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
               <Home></Home>
             </Route>
             <Route path="/postDetails/:postId">
+              <ScrollTop></ScrollTop>
               <PostDetails></PostDetails>
             </Route>
             <Route path="*">

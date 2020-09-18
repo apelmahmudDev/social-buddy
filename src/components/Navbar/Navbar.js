@@ -1,5 +1,4 @@
 import React from 'react';
-import './Navbar.css';
 import { fade, makeStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
@@ -17,6 +16,10 @@ import logo from '../../images/buddy.png';
 import { Link } from 'react-router-dom';
 
 const useStyles = makeStyles((theme) => ({
+  logo: {
+    height: '70px',
+    marginRight: '10px'
+  },
   grow: {
     flexGrow: 1,
   },
@@ -161,7 +164,7 @@ const Navbar = () => {
       <AppBar position="static">
         <Toolbar>
           <Link to="/">
-            <img className="navbar__logo" src={logo} alt=""/> 
+            <img className={classes.logo} src={logo} alt=""/> 
           </Link>
           <div className={classes.search}>
             <div className={classes.searchIcon}>

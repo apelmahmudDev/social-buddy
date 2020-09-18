@@ -1,11 +1,9 @@
 import React, { useEffect, useState } from 'react';
-import './Home.css';
 import Post from '../Post/Post';
 import { Container, Typography } from '@material-ui/core';
 
 const Home = () => {
     const [posts, setPosts] = useState([]);
-    // const totalPost = posts.slice(0, 15);
 
     useEffect(() => {
         fetch(`https://jsonplaceholder.typicode.com/posts`)
@@ -15,7 +13,7 @@ const Home = () => {
 
     return (
         <Container>
-            <Typography variant="h6" className="post__length">
+            <Typography variant="h6">
                 Recent Post ({posts.length})
             </Typography>
             {
