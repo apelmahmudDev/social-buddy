@@ -19,7 +19,10 @@ const Home = () => {
                 Recent Post ({posts.length})
             </Typography>
             {
-                posts.map((post => <Post post={post}></Post>))
+                posts.map((post => <Post 
+                    post={post}
+                    key={post.id}
+                    ></Post>))
             }
         </Container>
     );

@@ -3,7 +3,6 @@ import './PostDetails.css';
 import { useParams } from 'react-router-dom';
 import { Box, Container, Typography } from '@material-ui/core';
 import Comment from '../Comment/Comment';
-import ChatIcon from '@material-ui/icons/Chat';
 import postUser from '../../fakeData/postUser';
 import ChatBubbleOutlineIcon from '@material-ui/icons/ChatBubbleOutline';
 import ShareIcon from '@material-ui/icons/Share';
@@ -64,6 +63,7 @@ const PostDetails = () => {
                         { 
                             comments.map(comment => <Comment 
                                 comment={comment}
+                                key={comment.id}
                                 ></Comment>) 
                         }
                     </Box>
