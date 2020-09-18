@@ -55,7 +55,7 @@ const postUser = [
     {"id":54, "name": "Albert Levings", "img":"http://dummyimage.com/187x194.jpg/ff4444/ffffff"},
     {"id":55, "name": "Artair Fitzgerald", "img":"https://randomuser.me/api/portraits/med/women/52.jpg"},
     {"id":56, "name": "Kippy O'Towey", "img":"http://dummyimage.com/219x198.jpg/5fa2dd/ffffff"},
-    {"id":57, "name": "Keely Ronnay","img":"ttps://randomuser.me/api/portraits/med/women/38.jpg"},
+    {"id":57, "name": "Keely Ronnay","img":"https://randomuser.me/api/portraits/med/women/38.jpg"},
     {"id":58, "name": "Gwyn Upjohn", "img":"http://dummyimage.com/222x221.jpg/ff4444/ffffff"},
     {"id":59, "name": "Polly Kitney", "img":"https://randomuser.me/api/portraits/med/women/64.jpg"},
     {"id":60, "name": "Isidora Boynton", "img":"http://dummyimage.com/171x120.jpg/cc0000/ffffff"},

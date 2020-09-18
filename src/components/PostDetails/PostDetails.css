@@ -10,13 +10,19 @@
 
 .post__details__title {
     text-transform: capitalize;
-    color: #E8A829;
+    color: #1B1A07;
 }
 
 .post__details__body {
     color: #797D9A;
 }
 
-.post__details__comment {
+.dream__color {
+    color: #797D9A;
+}
+
+.comment__share {
+    padding: 5px 30px;
     border-top: 1px solid #d3d3d3;
+    border-bottom: 1px solid #d3d3d3;
 }

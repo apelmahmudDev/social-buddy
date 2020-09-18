@@ -13,6 +13,16 @@
     color: #797D9A;
 }
 
+.post__user__image {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.post__user {
+    color: #EEBB3E;
+}
+
 .post__link {
     text-decoration: none;
     cursor: pointer;
