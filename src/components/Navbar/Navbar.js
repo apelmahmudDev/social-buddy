@@ -4,7 +4,6 @@ import { fade, makeStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import IconButton from '@material-ui/core/IconButton';
-import Typography from '@material-ui/core/Typography';
 import InputBase from '@material-ui/core/InputBase';
 import Badge from '@material-ui/core/Badge';
 import MenuItem from '@material-ui/core/MenuItem';
@@ -15,6 +14,7 @@ import MailIcon from '@material-ui/icons/Mail';
 import NotificationsIcon from '@material-ui/icons/Notifications';
 import MoreIcon from '@material-ui/icons/MoreVert';
 import logo from '../../images/buddy.png';
+import { Link } from 'react-router-dom';
 
 const useStyles = makeStyles((theme) => ({
   grow: {
@@ -23,14 +23,7 @@ const useStyles = makeStyles((theme) => ({
   menuButton: {
     marginRight: theme.spacing(2),
   },
-  title: {
-    display: 'none',
-    [theme.breakpoints.up('sm')]: {
-      display: 'block',
-    },
-  },
   search: {
-      flex: '1',
     position: 'relative',
     borderRadius: theme.shape.borderRadius,
     backgroundColor: fade(theme.palette.common.white, 0.15),
@@ -167,10 +160,9 @@ const Navbar = () => {
     <div className={classes.grow} style={{position: 'sticky', top: '0', zIndex:'1'}}>
       <AppBar position="static">
         <Toolbar>
-          <img className="navbar__logo" src={logo} alt=""/>
-          <Typography className={classes.title} variant="h6" noWrap>
-            Social-Buddy
-          </Typography>
+          <Link to="/">
+            <img className="navbar__logo" src={logo} alt=""/> 
+          </Link>
           <div className={classes.search}>
             <div className={classes.searchIcon}>
               <SearchIcon />
