@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './PostDetails.css';
 import { useParams } from 'react-router-dom';
-import { Box, Button, Container, Typography } from '@material-ui/core';
+import { Box, Container, Typography } from '@material-ui/core';
 import Comment from '../Comment/Comment';
 import ChatIcon from '@material-ui/icons/Chat';
 
@@ -27,13 +27,16 @@ const PostDetails = () => {
     return (
         <Container className="post__details">
             <Box  className="post__details__post">
-                <Typography>
-                    <h2>{post.title}</h2>
-                    {post.body}
+                <Typography component="div">
+                    <h2 className="post__details__title">{post.title}</h2>
+                    <p className="post__details__body">{post.body}</p>
                     {/* Post comment */}
-                    <p><strong>Comments</strong></p>
-                    <Box className="post__details__button" mt={2}>
-                    <p><ChatIcon /><strong>{comments.length}</strong></p>
+                    <Typography><strong>Comments</strong></Typography>
+                    <Box className="post__details__comment" mt={2}>
+                        <Box display="flex" alignItems="center">
+                            <ChatIcon />
+                            <p><strong>{comments.length}</strong></p>
+                        </Box>
                         { 
                             comments.map(comment => <Comment 
                                 comment={comment}

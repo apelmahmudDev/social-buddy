@@ -15,6 +15,7 @@
 
 .post__link {
     text-decoration: none;
+    cursor: pointer;
 }
 
 .main__button {

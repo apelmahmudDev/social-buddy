@@ -11,7 +11,7 @@ const Banner = () => {
                 <img src={banner} alt=""/>
             </div>
             <Container className="banner__text">
-                <Typography variant="h4" className="banner__text__title">
+                <Typography variant="h5" className="banner__text__title">
                     We are <br/> Friends all here....
                 </Typography>
                 <Box mt={2}>

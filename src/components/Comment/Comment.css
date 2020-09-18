@@ -1,5 +1,5 @@
 .comment__box {
-    width: 50%;
+    /* width: 50%; */
     margin: 10px 0;
     padding: 10px;
     background-color: #F0F2F5;
@@ -16,4 +16,12 @@
     height: 50px;
     width: 50px;
     border-radius: 50%;
+}
+
+.comment__user h5 {
+    color: #EEBB3E;
+}
+
+.comment__body {
+    color: #797D9A;
 }

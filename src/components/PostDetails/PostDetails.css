@@ -8,12 +8,15 @@
     padding: 3%;
 }
 
-.post__details__button {
-    border-top: 1px solid #d3d3d3;
+.post__details__title {
+    text-transform: capitalize;
+    color: #E8A829;
 }
 
-.post__details__button Button{
-    height: 30px;
-    margin-top: 5px;
-    text-transform: capitalize;
+.post__details__body {
+    color: #797D9A;
+}
+
+.post__details__comment {
+    border-top: 1px solid #d3d3d3;
 }

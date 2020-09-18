@@ -17,13 +17,11 @@ function App() {
   return (
       <Router>
         <div className="App">
-        <Navbar></Navbar>
-        
+          <Navbar></Navbar>
           <Switch>
             <Route exact path="/">
-            <Banner></Banner>
+              <Banner></Banner>
               <Home></Home>
-              
             </Route>
             <Route path="/home">
               <Home></Home>

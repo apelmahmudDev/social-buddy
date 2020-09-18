@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import './Home.css';
 import Post from '../Post/Post';
+import { Container, Typography } from '@material-ui/core';
 
 const Home = () => {
     const [posts, setPosts] = useState([]);
-    const totalPost = posts.slice(0, 15);
+    // const totalPost = posts.slice(0, 15);
 
     useEffect(() => {
         fetch(`https://jsonplaceholder.typicode.com/posts`)
@@ -13,12 +14,14 @@ const Home = () => {
     },[])
 
     return (
-        <div>
-            <h2 className="post__length">Recent Post ({totalPost.length})</h2>
+        <Container>
+            <Typography variant="h6" className="post__length">
+                Recent Post ({posts.length})
+            </Typography>
             {
-                totalPost.map((post => <Post post={post}></Post>))
+                posts.map((post => <Post post={post}></Post>))
             }
-        </div>
+        </Container>
     );
 };
 
