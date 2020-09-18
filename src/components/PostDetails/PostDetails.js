@@ -24,10 +24,10 @@ const PostDetails = () => {
 	useEffect(() => {
 		fetch(`https://jsonplaceholder.typicode.com/comments?postId=${postId}`)
 			.then((res) => res.json())
-			.then((data) => setComments(data));
+			.then((data) => setComments(data))
 	}, [postId]);
 
-	// load post user image and name
+	// load post user image and names
 	useEffect(() => {
 		const allPostUser = postUser;
 		setUsers(allPostUser);
