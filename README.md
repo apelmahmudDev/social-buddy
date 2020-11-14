@@ -1,5 +1,5 @@
 # Social Buddy 
-![](https://i.imgur.com/M3B7kKk.png)
+![](https://i.imgur.com/M3B7kKk.png)[](https://social-buddyy.netlify.app/)
 
 # [LIVE](https://social-buddyy.netlify.app/)
 
